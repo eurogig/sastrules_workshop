@@ -1,0 +1,14 @@
+metadata:
+ id: CKV3_SAST_CUSTOM_1
+ name: Test custom
+ guidelines: "Because"
+ category: "sast"
+ approach: "define failing"
+ cwe: "CWE-CWE-532: Insertion of Sensitive Information into Log File"
+ owasp: "A09:2021-Security Logging and Monitoring Failures"
+scope:
+ languages:
+   - "python"
+definition:
+ pattern: print(<ANY>)
+
