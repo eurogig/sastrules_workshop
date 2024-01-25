@@ -1,0 +1,19 @@
+metadata:
+  id: CKV3_UNIQUE_ID
+  version: 0.2
+  name: Good name to stop XSS
+  guidelines: Stop XSS from happening in the application web pages.
+  severity: HIGH
+  cwe: "CWE-XX: What is the CWE for XSS?" 
+  owasp: "A03:2021-Injection"
+scope:
+  languages:
+  - python
+definition:
+  source:
+    or:
+  sanitizer:
+    or:
+  sink:
+    or:
+

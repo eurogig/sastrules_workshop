@@ -1,0 +1,17 @@
+metadata:
+  id: CKV3_UNIQUE_ID
+  name: Deserialization is bad 
+  guidelines: By swapping out the loader yaml.Loader in favor of the yaml.SafeLoader loader. This loader is safer because it completely blocks loading of custom classes.
+  category: sast
+  approach: define failing
+  severity: CRITICAL
+  cwe: "CWE_502: Deserialization of Untrusted Data"
+scope:
+  languages:
+    - python
+definition:
+  patterns:
+    or: 
+      - pattern: somecall in the code
+        conditions:
+          - not_pattern: samecall with the SafeLoader 
