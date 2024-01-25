@@ -13,7 +13,7 @@ def index():
 
         reply = f'Thank you, {name}! Your email ({email}) has been logged.'
 
-        return reply 
+        return reply
 
     return render_template('index.htm')
 
@@ -23,4 +23,3 @@ def log_data(name, email):
 
 if __name__ == '__main__':
     app.run(debug=True)
-
