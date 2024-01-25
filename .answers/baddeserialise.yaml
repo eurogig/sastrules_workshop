@@ -1,6 +1,6 @@
 metadata:
   id: CKV3_SAST_999
-  name: Unsafe use of Loader deserialization 
+  name: Unsafe use of Loader deserialization
   guidelines: By swapping out the loader yaml.Loader in favor of the yaml.SafeLoader loader. This loader is safer because it completely blocks loading of custom classes.
   category: sast
   approach: define failing
@@ -11,7 +11,7 @@ scope:
     - python
 definition:
   patterns:
-    or: 
+    or:
       - pattern:  yaml.load(<ANY>)
         conditions:
           - not_pattern: yaml.load(<ANY>, Loader = yaml.SafeLoader )

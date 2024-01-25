@@ -13,7 +13,7 @@ def index():
 
         reply = f'Thank you, {name}! Your email ({email}) has been logged.'
 
-        return reply 
+        return reply
 
     return render_template('index.htm')
 
