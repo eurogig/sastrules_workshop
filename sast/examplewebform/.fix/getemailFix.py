@@ -26,4 +26,3 @@ def log_data(name, email):
 
 if __name__ == '__main__':
     app.run(debug=True)
-

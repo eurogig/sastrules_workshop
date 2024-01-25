@@ -5,4 +5,3 @@ with open('person.yml', 'r') as input_file:
     person = yaml.load(input_file, Loader = yaml.SafeLoader)
 
 print(person)
-
